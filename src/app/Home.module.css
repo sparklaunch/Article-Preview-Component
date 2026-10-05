@@ -12,9 +12,12 @@
 
 .body {
 	background-color: white;
-	padding: 30px;
 	display: grid;
 	justify-content: space-between;
+}
+
+.text {
+	padding: 30px;
 }
 
 .title {
@@ -26,4 +29,5 @@
 	color: var(--color-text);
 	font-size: 14px;
 	line-height: 1.5;
+	margin-top: 10px;
 }

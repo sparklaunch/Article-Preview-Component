@@ -7,15 +7,18 @@ export default function Home() {
 		<main className={styles.main}>
 			<Image src={drawers} alt="" className={styles.drawers} />
 			<div className={styles.body}>
-				<h2 className={styles.title}>
-					Shift the overall look and feel by adding these wonderful
-					touches to furniture in your home
-				</h2>
-				<p className={styles.content}>
-					Ever been in a room and felt like something was missing?
-					Perhaps it felt slightly bare and uninviting. I&apos;ve got
-					some simple tips to help you make any room feel complete.
-				</p>
+				<div className={styles.text}>
+					<h2 className={styles.title}>
+						Shift the overall look and feel by adding these
+						wonderful touches to furniture in your home
+					</h2>
+					<p className={styles.content}>
+						Ever been in a room and felt like something was missing?
+						Perhaps it felt slightly bare and uninviting. I&apos;ve
+						got some simple tips to help you make any room feel
+						complete.
+					</p>
+				</div>
 			</div>
 		</main>
 	);
