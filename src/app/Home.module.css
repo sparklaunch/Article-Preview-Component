@@ -1,2 +1,29 @@
 .main {
+	display: grid;
+	grid-template-columns: 300px 600px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.drawers {
+	width: 100%;
+	height: auto;
+}
+
+.body {
+	background-color: white;
+	padding: 30px;
+	display: grid;
+	justify-content: space-between;
+}
+
+.title {
+	color: var(--color-text);
+	font-size: 24px;
+}
+
+.content {
+	color: var(--color-text);
+	font-size: 14px;
+	line-height: 1.5;
 }
