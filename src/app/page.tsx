@@ -48,7 +48,11 @@ export default function Home() {
 					>
 						<Image src={shareButton} alt="Click to share" />
 					</button>
-					{shareTooltipVisible && <ShareTooltip />}
+					{shareTooltipVisible && (
+						<ShareTooltip
+							setShareTooltipVisible={setShareTooltipVisible}
+						/>
+					)}
 				</footer>
 			</div>
 		</main>

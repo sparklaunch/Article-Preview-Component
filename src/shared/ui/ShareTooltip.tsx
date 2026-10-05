@@ -5,7 +5,11 @@ import shareButton from "../assets/images/share.svg";
 import twitter from "../assets/images/twitter.svg";
 import styles from "./ShareTooltip.module.css";
 
-export default function ShareTooltip() {
+export default function ShareTooltip({
+	setShareTooltipVisible
+}: {
+	setShareTooltipVisible: (shareTooltipVisible: boolean) => void;
+}) {
 	return (
 		<div className={styles.tooltipWrapper}>
 			<div className={styles.tooltip}>
@@ -34,7 +38,11 @@ export default function ShareTooltip() {
 						<Image src={pinterest} alt="Share on Pinterest" />
 					</button>
 				</div>
-				<button type="button" className={styles.closeShareButton}>
+				<button
+					type="button"
+					className={styles.closeShareButton}
+					onClick={() => setShareTooltipVisible(false)}
+				>
 					<Image src={shareButton} alt="Close Share" />
 				</button>
 			</div>
