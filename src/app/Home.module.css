@@ -36,10 +36,29 @@
 .footer {
 	padding: 30px;
 	margin-top: auto;
+	display: flex;
+	gap: 20px;
+	align-items: center;
 }
 
 .avatar {
 	width: 50px;
 	height: auto;
 	border-radius: 50%;
+}
+
+.nameAndDate {
+	display: flex;
+	flex-direction: column;
+	gap: 3px;
+}
+
+.name {
+	color: var(--color-text);
+	font-size: 18px;
+}
+
+.date {
+	color: var(--color-text);
+	font-size: 14px;
 }

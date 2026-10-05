@@ -26,6 +26,10 @@ export default function Home() {
 						alt="Michelle Appleton"
 						className={styles.avatar}
 					/>
+					<div className={styles.nameAndDate}>
+						<h3 className={styles.name}>Michelle Appleton</h3>
+						<p className={styles.date}>28 Jun 2020</p>
+					</div>
 				</footer>
 			</div>
 		</main>
