@@ -8,15 +8,16 @@ export default function ShareTooltip() {
 	return (
 		<div className={styles.tooltip}>
 			<p className={styles.shareText}>SHARE</p>
-			<button type="button">
+			<button type="button" className={styles.shareButton}>
 				<Image src={facebook} alt="Share on Facebook" />
 			</button>
-			<button type="button">
+			<button type="button" className={styles.shareButton}>
 				<Image src={twitter} alt="Share on Twitter" />
 			</button>
-			<button type="button">
+			<button type="button" className={styles.shareButton}>
 				<Image src={pinterest} alt="Share on Pinterest" />
 			</button>
+			<div className={styles.arrow} />
 		</div>
 	);
 }
