@@ -1,5 +1,6 @@
 import Image from "next/image";
 import drawers from "../shared/assets/images/drawers.jpg";
+import michelle from "../shared/assets/images/michelle.jpg";
 import styles from "./Home.module.css";
 
 export default function Home() {
@@ -19,6 +20,13 @@ export default function Home() {
 						complete.
 					</p>
 				</div>
+				<footer className={styles.footer}>
+					<Image
+						src={michelle}
+						alt="Michelle Appleton"
+						className={styles.avatar}
+					/>
+				</footer>
 			</div>
 		</main>
 	);
