@@ -2,4 +2,16 @@
 	position: absolute;
 	bottom: 0;
 	right: 0;
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	padding: 20px 40px;
+	background-color: var(--color-text);
+	border-radius: 10px;
+}
+
+.shareText {
+	color: var(--color-background);
+	font-weight: 100;
+	letter-spacing: 5px;
 }
