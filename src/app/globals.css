@@ -1,0 +1,11 @@
+:root {
+	--color-background: rgb(234, 240, 247);
+	--color-text: rgb(54, 58, 72);
+	--color-share: rgb(100, 120, 146);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
