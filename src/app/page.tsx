@@ -1,6 +1,7 @@
 import Image from "next/image";
 import drawers from "../shared/assets/images/drawers.jpg";
 import michelle from "../shared/assets/images/michelle.jpg";
+import shareButton from "../shared/assets/images/share.svg";
 import styles from "./Home.module.css";
 
 export default function Home() {
@@ -30,6 +31,9 @@ export default function Home() {
 						<h3 className={styles.name}>Michelle Appleton</h3>
 						<p className={styles.date}>28 Jun 2020</p>
 					</div>
+					<button type="button" className={styles.button}>
+						<Image src={shareButton} alt="Click to share" />
+					</button>
 				</footer>
 			</div>
 		</main>
