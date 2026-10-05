@@ -1,10 +1,16 @@
+"use client";
+
+import { clsx } from "clsx";
 import Image from "next/image";
+import { useState } from "react";
 import drawers from "../shared/assets/images/drawers.jpg";
 import michelle from "../shared/assets/images/michelle.jpg";
 import shareButton from "../shared/assets/images/share.svg";
+import ShareTooltip from "../shared/ui/ShareTooltip";
 import styles from "./Home.module.css";
 
 export default function Home() {
+	const [shareTooltipVisible, setShareTooltipVisible] = useState(false);
 	return (
 		<main className={styles.main}>
 			<Image src={drawers} alt="" className={styles.drawers} />
@@ -31,9 +37,18 @@ export default function Home() {
 						<h3 className={styles.name}>Michelle Appleton</h3>
 						<p className={styles.date}>28 Jun 2020</p>
 					</div>
-					<button type="button" className={styles.button}>
+					<button
+						type="button"
+						className={clsx(styles.button, {
+							[styles.active]: shareTooltipVisible
+						})}
+						onClick={() =>
+							setShareTooltipVisible(!shareTooltipVisible)
+						}
+					>
 						<Image src={shareButton} alt="Click to share" />
 					</button>
+					{shareTooltipVisible && <ShareTooltip />}
 				</footer>
 			</div>
 		</main>
