@@ -1,7 +1,7 @@
 .tooltip {
 	position: absolute;
 	bottom: 100px;
-	right: -100px;
+	right: -75px;
 	display: flex;
 	gap: 10px;
 	align-items: center;
@@ -24,7 +24,7 @@
 
 .arrow {
 	position: absolute;
-	bottom: -80px;
+	bottom: -40px;
 	left: 50%;
 	transform: translateX(-50%);
 	clip-path: polygon(50% 50%, 0 0, 100% 0);
